@@ -10,5 +10,17 @@
 [node name="Ground_grass" parent="Grassholder" instance=ExtResource("1_k4q1n")]
 position = Vector2(368, 261)
 
+[node name="Ground_grass2" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(496, 261)
+
+[node name="Ground_grass3" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(624, 261)
+
+[node name="Ground_grass4" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(750, 261)
+
+[node name="Ground_grass5" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(877, 261)
+
 [node name="Player" parent="." instance=ExtResource("2_edd8q")]
 position = Vector2(358, 166)
