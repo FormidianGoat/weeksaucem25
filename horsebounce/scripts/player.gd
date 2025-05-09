@@ -27,3 +27,6 @@ func _physics_process(delta):
 		$Sprite2D.flip_h = false
 
 	move_and_slide()
+	
+	for index in get_slide_collision_count():
+		var collision = get_slide_collision(index)
