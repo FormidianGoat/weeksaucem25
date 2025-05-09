@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdcg115hp2f31"]
+
+[ext_resource type="PackedScene" uid="uid://crndbxels0tjr" path="res://ground_grass.tscn" id="1_k4q1n"]
+[ext_resource type="PackedScene" uid="uid://b743jxt08p7e0" path="res://player.tscn" id="2_edd8q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Grassholder" type="Node2D" parent="."]
+
+[node name="Ground_grass" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(368, 261)
+
+[node name="Player" parent="." instance=ExtResource("2_edd8q")]
+position = Vector2(358, 166)
