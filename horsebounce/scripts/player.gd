@@ -4,6 +4,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+var is_jumping = false
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -12,6 +14,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		is_jumping = true
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -27,3 +30,18 @@ func _physics_process(delta):
 		$Sprite2D.flip_h = false
 
 	move_and_slide()
+	
+	if is_on_floor():
+		stop_flipping()
+	
+	if is_jumping:
+		do_a_flip(delta)
+
+func do_a_flip(delta):
+	if velocity.x < 0:
+		$Sprite2D.rotate(delta * -10)
+	elif velocity.x > 0:
+		$Sprite2D.rotate(delta * 10)
+	
+func stop_flipping():
+	$Sprite2D.rotation_degrees = 0
