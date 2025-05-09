@@ -32,6 +32,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	if is_on_floor():
+		is_jumping = false
 		stop_flipping()
 	
 	if is_jumping:
