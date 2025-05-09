@@ -31,6 +31,11 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
+	for index in get_slide_collision_count():
+		var collision = get_slide_collision(index)
+		if collision.get_collider().is_in_group("BadThings"):
+			self.queue_free()
+	
 	if is_on_floor():
 		is_jumping = false
 		stop_flipping()

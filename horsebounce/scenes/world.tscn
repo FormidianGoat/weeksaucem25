@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdcg115hp2f31"]
+[gd_scene load_steps=4 format=3 uid="uid://cdcg115hp2f31"]
 
 [ext_resource type="PackedScene" uid="uid://crndbxels0tjr" path="res://scenes/ground_grass.tscn" id="1_k4q1n"]
 [ext_resource type="PackedScene" uid="uid://b743jxt08p7e0" path="res://scenes/player.tscn" id="2_edd8q"]
+[ext_resource type="PackedScene" uid="uid://cg32x8xsa7gph" path="res://scenes/greg.tscn" id="3_khnyg"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -24,3 +25,6 @@ position = Vector2(877, 261)
 
 [node name="Player" parent="." instance=ExtResource("2_edd8q")]
 position = Vector2(358, 166)
+
+[node name="Greg" parent="." instance=ExtResource("3_khnyg")]
+position = Vector2(795, 197)
