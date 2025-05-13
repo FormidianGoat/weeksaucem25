@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://b5ei26p0fynvq"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "You Suck"
-horizontal_alignment = 1

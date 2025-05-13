@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnyiy0x48b0qa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3camt"]
+
+[node name="killplane" type="Node2D" groups=["BadThings"]]
+
+[node name="Area2D" type="Area2D" parent="." groups=["BadThings"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["BadThings"]]
+scale = Vector2(1000, 50)
+shape = SubResource("RectangleShape2D_3camt")

@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://cynox17h4dvpo"]
+
+[ext_resource type="Script" path="res://scripts/game_ui.gd" id="1_kbr13"]
+
+[node name="gameUI" type="CanvasLayer"]
+script = ExtResource("1_kbr13")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+visible = false
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.172833, 0.172833, 0.172833, 1)
+
+[node name="Label" type="Label" parent="MarginContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.0
+offset_top = -11.5
+offset_right = 47.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "You're Dead"
+horizontal_alignment = 1
+vertical_alignment = 1

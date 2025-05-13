@@ -1,11 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://cg32x8xsa7gph"]
+[gd_scene load_steps=4 format=3 uid="uid://cg32x8xsa7gph"]
 
 [ext_resource type="Texture2D" uid="uid://bqhcy5nc8ux87" path="res://textures/greg.png" id="1_tqwgv"]
+
+[sub_resource type="GDScript" id="GDScript_be3uh"]
+script/source = "extends StaticBody2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sdao0"]
 size = Vector2(32, 64)
 
 [node name="Greg" type="StaticBody2D" groups=["BadThings"]]
+script = SubResource("GDScript_be3uh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -1)
