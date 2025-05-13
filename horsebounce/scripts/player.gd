@@ -2,9 +2,13 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -600.0
+const death_floor = 250
 
 var is_jumping = false
+
+#custom signal for when you die
+signal dead
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -34,7 +38,14 @@ func _physics_process(delta):
 	for index in get_slide_collision_count():
 		var collision = get_slide_collision(index)
 		if collision.get_collider().is_in_group("BadThings"):
+			print("I'm Dead")
+			emit_signal("dead")
 			self.queue_free()
+			
+	if self.global_position.y > death_floor :
+		print("I fell")
+		emit_signal("dead")
+		self.queue_free()
 	
 	if is_on_floor():
 		stop_flipping()

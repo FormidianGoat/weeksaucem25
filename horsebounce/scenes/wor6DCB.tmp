@@ -10,40 +10,39 @@
 [node name="Grassholder" type="Node2D" parent="."]
 
 [node name="Ground_grass" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(355, 34)
+position = Vector2(368, 261)
 
 [node name="Ground_grass2" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(483, 34)
+position = Vector2(496, 261)
 
 [node name="Ground_grass3" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(611, 34)
+position = Vector2(624, 261)
 
 [node name="Ground_grass4" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(737, 34)
+position = Vector2(750, 261)
 
 [node name="Ground_grass5" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(864, 34)
+position = Vector2(877, 261)
 
 [node name="Ground_grass6" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(992, 34)
+position = Vector2(1005, 261)
 
 [node name="Ground_grass7" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(1120, 34)
+position = Vector2(1133, 261)
 
 [node name="Ground_grass8" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(1248, 34)
+position = Vector2(1261, 261)
 
 [node name="Ground_grass9" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(1374, 34)
+position = Vector2(1387, 261)
 
 [node name="Ground_grass10" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(1501, 34)
+position = Vector2(1514, 261)
 
 [node name="Player" parent="." instance=ExtResource("2_edd8q")]
-position = Vector2(345, -61)
+position = Vector2(358, 166)
 
 [node name="Greg" parent="." instance=ExtResource("3_khnyg")]
-position = Vector2(782, -30)
+position = Vector2(795, 197)
 
 [node name="gameUI" parent="." instance=ExtResource("4_3nn03")]
-script = null
