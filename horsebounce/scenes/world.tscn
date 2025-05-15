@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cdcg115hp2f31"]
+[gd_scene load_steps=6 format=3 uid="uid://cdcg115hp2f31"]
 
 [ext_resource type="PackedScene" uid="uid://crndbxels0tjr" path="res://scenes/ground_grass.tscn" id="1_k4q1n"]
 [ext_resource type="PackedScene" uid="uid://b743jxt08p7e0" path="res://scenes/player.tscn" id="2_edd8q"]
+[ext_resource type="PackedScene" uid="uid://dy7u4aoh5qffh" path="res://scenes/fence.tscn" id="2_w411x"]
 [ext_resource type="PackedScene" uid="uid://cg32x8xsa7gph" path="res://scenes/greg.tscn" id="3_khnyg"]
 [ext_resource type="PackedScene" uid="uid://cynox17h4dvpo" path="res://scenes/game_ui.tscn" id="4_3nn03"]
 
@@ -37,7 +38,46 @@ position = Vector2(1248, 34)
 position = Vector2(1374, 34)
 
 [node name="Ground_grass10" parent="Grassholder" instance=ExtResource("1_k4q1n")]
-position = Vector2(1501, 34)
+position = Vector2(1502, 34)
+
+[node name="Ground_grass11" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(1753, 34)
+
+[node name="Ground_grass12" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(1881, 34)
+
+[node name="Ground_grass13" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(2005, 34)
+
+[node name="Fence2" parent="Grassholder" instance=ExtResource("2_w411x")]
+position = Vector2(1176, -13)
+
+[node name="Fence" parent="Grassholder" instance=ExtResource("2_w411x")]
+position = Vector2(2018, -12)
+
+[node name="Ground_grass14" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(2132, 34)
+
+[node name="Ground_grass15" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(1628, 34)
+
+[node name="Ground_grass16" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(2257, 34)
+
+[node name="Ground_grass17" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(2383, 34)
+
+[node name="Ground_grass18" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(2510, 34)
+
+[node name="Ground_grass19" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(2638, 34)
+
+[node name="Ground_grass20" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(3101, 30)
+
+[node name="Ground_grass21" parent="Grassholder" instance=ExtResource("1_k4q1n")]
+position = Vector2(3228, 30)
 
 [node name="Player" parent="." instance=ExtResource("2_edd8q")]
 position = Vector2(345, -61)
